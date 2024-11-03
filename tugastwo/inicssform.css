@@ -1,0 +1,127 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(setraspg.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+hr {
+    border-top: 3px dashed;
+}
+
+.formulir {
+    background-color:bisque;
+    filter: opacity(90%);
+    padding: 10px;
+    border-radius: 8px;
+    border-style: dashed;
+    width: 90%;
+    max-width: 1200px;
+    max-height: 100vh;
+    overflow: auto;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.button-container {
+    display: flex;            
+    justify-content: center;  
+    align-items: center;      
+    margin-top: 15px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.input-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+#KetikPembayaran {
+    margin-left: auto; 
+    padding: 6px;
+    width: 46%;
+}
+
+button {
+    display: flex;           
+    align-items: center; 
+    height: 30px;
+    width: 100px;
+    margin: 0 10px;        
+    border-radius: 5px;   
+    cursor: pointer;
+    border: 1px solid;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+label, 
+textarea, 
+select, 
+#Nama_Pembeli, 
+#Kode_Pos, 
+#Tanggal_Beli {
+    width: 100%;
+}
+
+input[type="text"], 
+input[type="date"], 
+textarea, 
+select {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.menu-item label {
+    width: 55%;
+    font-size: 14px;
+}
+
+.menu-item input[type="number"] {
+    width: 50%;
+    margin-left: 5px;
+    padding: 5px; 
+}
+
+@media (max-width: 600px) {
+    .formulir {
+        padding: 10px;
+    }
+
+    label, h2 {
+        font-size: 14px;
+    }
+
+    .menu-item label {
+        width: 50%;
+    }
+
+    .menu-item input[type="text"] {
+        width: 60%;
+    }
+}

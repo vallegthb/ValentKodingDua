@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Nota Pembelian</title>
+    <link rel="stylesheet" href="inicssform.css">
+</head>
+<body>
+    <div class="formulir">
+        <header>
+            <h2>Formulir Nota Pembelian</h2>
+        </header>
+        <hr>
+        <form>
+            <label for="Nama_Pembeli">Nama pembeli :</label>
+            <br>
+            <input type="text" id="Nama_Pembeli" name="Nama_Pembeli" placeholder="Masukkan Nama">
+            <br>
+            <label for="Alamat_pembeli">Alamat pembeli :</label>
+            <br>
+            <textarea id="Alamat_pembeli" name="Alamat_pembeli" placeholder="Masukkan alamat"></textarea>
+            <br>
+            <label for="Kode_Pos">Kode pos :</label>
+            <br>
+            <input type="text" list="kodePosList" id="Kode_Pos" name="Kode_pos" placeholder="Masukkan kode pos">
+            <datalist id="kodePosList">
+                <option value="45777">45777</option>
+                <option value="50111">50111</option>
+                <option value="50112">50112</option>
+                <option value="50114">50114</option>
+                <option value="50115">50115</option>
+                <option value="50117">50117</option>
+                <option value="50122">50122</option>
+                <option value="50123">50123</option>
+                <option value="50232">50232</option>
+            </datalist>
+            <br>
+            <label for="Tanggal_Beli">Tanggal beli :</label>
+            <br>
+            <input type="date" id="Tanggal_Beli" name="Tanggal_beli">
+            <br>
+            <label for="Pembayaran">Pembayaran :</label>
+            <br>
+            <div class="input-group">
+                <input type="radio" id="PembayaranLunas" name="Pembayaran" value="Lunas">Lunas
+                <input type="radio" id="PembayaranBelum" name="Pembayaran" value="Belum Bayar">Belum bayar
+                <input type="radio" id="PembayaranDP" name="Pembayaran" value="DP">DP
+                <input type="number" id="KetikPembayaran" name="Angka_DP" placeholder="Ketikkan angka uang muka">
+            <br>
+            </div>
+            <label for="Metode_Pembayaran">Metode pembayaran :</label>
+            <br>
+            <select id="Metode_Pembayaran" name="Metode_pembayaran">
+                <option value="Pilih">Pilih</option>
+                <option value="Tunai">Tunai</option>
+                <option value="Transfer">Transfer</option>
+                <option value="Qris">Qris</option>
+            </select>
+            <br>
+            <label for="Menu">Menu</label>
+            <br>
+            <div class="menu-item">
+                <input type="checkbox" id="MieGoreng" name="MieGoreng" value="MieGoreng">
+                <label for="JumlahMieGoreng">Mie Goreng</label>
+                <input type="number" id="JumlahMieGoreng" name="Jumlah_MieGoreng" placeholder="Jumlah item (angka)">
+            </div>
+            <div class="menu-item">
+                <input type="checkbox" id="Seblak" name="Seblak" value="Seblak">
+                <label for="JumlahSeblak">Seblak</label>
+                <input type="number" id="JumlahSeblak" name="Jumlah_Seblak" placeholder="Jumlah item (angka)">
+            </div>
+            <div class="menu-item">
+                <input type="checkbox" id="Martabak" name="Martabak" value="Martabak">
+                <label for="JumlahMartabak">Martabak</label>
+                <input type="number" id="JumlahMartabak" name="Jumlah_Martabak" placeholder="Jumlah item (angka)">
+            </div>
+            <div class="menu-item">
+                <input type="checkbox" id="Geprek" name="Geprek" value="Geprek">
+                <label for="JumlahGeprek">Geprek</label>
+                <input type="number" id="JumlahGeprek" name="Jumlah_Geprek" placeholder="Jumlah item (angka)">
+            </div>
+            <div class="button-container">
+                <button type="button" onclick="this.form.reset()">Clear</button>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
